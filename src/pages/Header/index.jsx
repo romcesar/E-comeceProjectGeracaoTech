@@ -1,21 +1,19 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyleHeader = styled.header`
-display: flex;
 background-color: #0e5b72;
 
 .div1{
-    width:100%;
+    width: 100%;
     height: 200px;
     align-content: center;
 }
 .div1 ul{
     list-style: none;
-    display: flex;
+    display: inline-flex;
     gap: 30px;
-    justify-content: flex-start; 
+    justify-content: space-around; 
 }
 .div1 h1{
     color: #c7cacc;
