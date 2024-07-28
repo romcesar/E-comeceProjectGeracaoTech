@@ -6,7 +6,7 @@ import Footer from '../Footer';
 
 
 
-const LayoutPage = () => {
+const LayoutPage = ({ children }) => {
     return (
         <div>
             <Header />

@@ -7,10 +7,14 @@ import rede3 from '../../assets/twitter.svg';
 const StyleFooter = styled.footer`
 color: white;
 background-color: #000000;
-display: flex;
-justify-content: center;
+width: 100%;
+height: 500px;
 
-.div1{
+ul{
+    list-style: none;
+}
+
+/* .div1{
     width: 100%;
     height: 200px;
     align-content: center;
@@ -20,20 +24,20 @@ justify-content: center;
     display: flex;
     align-content: center;
     justify-content: center;
-}
+} */
 `;
 
 const Footer = () => {
     return (<>
         <StyleFooter>
-            <div className='grid justify-content-center'>
-                <div className='col-8 '>
-                    <div className='col text-center p-3 border-round-sm bg-primary font-bold'>
+            <div className='flex'>
+                <div className='flex-1 pl-8 pt-8 pr-4'>
+                    <div className=' text-center p-3 border-round-sm bg-primary font-bold'>
                         <img src={logo} alt="logo" />
                     </div>
-                    <div className='col text-left text-center p-3 border-round-sm bg-primary font-bold'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur quo doloribus ducimus nulla? Explicabo quas
-                        blanditiis aliquid rerum deserunt ab officia modi culpa nobis, sequi quasi dignissimos maxime dolores.
+                    <div className=' text-left text-center p-3 border-round-sm bg-primary font-bold'>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur
+                        nullat ab officia modi culpa nobis.
                     </div>
                     <div className='grid col text-center p-3 border-round-sm bg-primary font-bold'>
                         <div className='col-2'>
@@ -47,38 +51,80 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className='grid'>
-                <div className='col-8 '>
-                <div className='col text-left text-center p-3 border-round-sm bg-primary font-bold'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur quo doloribus ducimus nulla? Explicabo quas
-                        blanditiis aliquid rerum deserunt ab officia modi culpa nobis, sequi quasi dignissimos maxime dolores.
-                    </div>
-                    
+                <div className='flex-1 p-7'>
                     <div className='col text-left text-center p-3 border-round-sm bg-primary font-bold'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur quo doloribus ducimus nulla? Explicabo quas
-                        blanditiis aliquid rerum deserunt ab officia modi culpa nobis, sequi quasi dignissimos maxime dolores.
+                        <h3>Informação</h3>
+                        <div >
+                            <ul>
+                                <li>
+                                    <a href="#">Sobre Drip Store</a>
+                                </li>
+                                <li>
+                                    <a href="#">Segurança</a>
+                                </li>
+                                <li>
+                                    <a href="#">Wishlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Trabalhe conosco</a>
+                                </li>
+                                <li>
+                                    <a href="#">Meus Pedidos</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                </div>
+                <div className='flex-1 p-7'>
+                    <div className='col text-left text-center p-3 border-round-sm bg-primary font-bold'>
+                        <div>
+                            <h3>Categorias</h3>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    <a href="#">Camisetas</a>
+                                </li>
+                                <li>
+                                    <a href="#">Calças</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bonés</a>
+                                </li>
+                                <li>
+                                    <a href="#">Headphones</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tênis</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex-1  p-7 pr-10'>
+                    <div className='col text-left text-center p-3 border-round-sm bg-primary font-bold'>
+                        <div>
+                            <h3>Contato</h3>
+                        </div>
+                        <div>
+                            <p>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
+                            <p>(85) 3051-3411</p>
 
+                        </div>
+                    </div>
                 </div>
 
             </div>
-            <div className='grid'>
-                <div className='col-8'>
-                <div className='col text-left text-center p-3 border-round-sm bg-primary font-bold'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur  
-                        i quasi dignissimos maxime dolores.
-                    </div>
-                    
-                    <div className='col text-left text-center p-3 border-round-sm bg-primary font-bold'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur quo 
-                        modi culpa nobis, sequi quasi dignissimos maxime dolores.
-                    </div>
-
-                </div>
-
+            <div className=' flex-inline  justify-content-center' >
+                <hr style={{ width: "900px" }}></hr>
+                <h4>@2024 Digital College</h4>
             </div>
-        </StyleFooter>
+
+
+        </StyleFooter >
     </>);
 }
 
