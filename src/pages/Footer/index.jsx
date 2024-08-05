@@ -12,6 +12,7 @@ height: 500px;
 
 ul{
     list-style: none;
+    padding-left: 10px;
 }
 
 /* .div1{
@@ -32,14 +33,14 @@ const Footer = () => {
         <StyleFooter>
             <div className='flex'>
                 <div className='flex-1 pl-8 pt-8 pr-4'>
-                    <div className=' text-center p-3 border-round-sm bg-primary font-bold'>
+                    <div className=' text-center p-3   font-bold'>
                         <img src={logo} alt="logo" />
                     </div>
-                    <div className=' text-left text-center p-3 border-round-sm bg-primary font-bold'>
+                    <div className=' text-left text-center p-3 font-bold'>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia consequatur
                         nullat ab officia modi culpa nobis.
                     </div>
-                    <div className='grid col text-center p-3 border-round-sm bg-primary font-bold'>
+                    <div className='grid col text-center p-3   font-bold'>
                         <div className='col-2'>
                             <img src={rede1} alt="facebook" />
                         </div>
@@ -52,7 +53,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex-1 p-7'>
-                    <div className='col text-left text-center p-3 border-round-sm bg-primary font-bold'>
+                    <div className='col text-left text-center p-3  font-bold'>
                         <h3>Informação</h3>
                         <div >
                             <ul>
@@ -79,7 +80,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='flex-1 p-7'>
-                    <div className='col text-left text-center p-3 border-round-sm bg-primary font-bold'>
+                    <div className='col text-left text-center p-3  font-bold'>
                         <div>
                             <h3>Categorias</h3>
                         </div>
@@ -104,8 +105,8 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex-1  p-7 pr-10'>
-                    <div className='col text-left text-center p-3 border-round-sm bg-primary font-bold'>
+                <div className='flex-1 p-7 pr-10'>
+                    <div className='col text-left text-center p-3  font-bold'>
                         <div>
                             <h3>Contato</h3>
                         </div>

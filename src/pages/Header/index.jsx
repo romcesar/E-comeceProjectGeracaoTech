@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../../assets/logo-header.svg';
 import carrinho from '../../assets/mini-cart.svg';
+import { Button } from 'primereact/button';
 
 const StyleHeader = styled.header`
     background-color: #ffffff;
@@ -116,14 +117,17 @@ const Header = () => {
                 <div className="search-bar">
                     <input type="text" placeholder="Pesquisar produtos..." />
                 </div>
-                <div className="botao-cadastro">
-                    <button className="btn signup-button">Cadastre-se</button>
+                <div className=" botao-cadastro">
+                    <Button size="small" className="btn signup-button" text raised>Cadastre-se</Button>
                 </div>
-                <div className="botao-entrar">
-                    <button className="btn login-button">Entrar</button>
+                <div className="p-button-raised ">
+                    <Button size="small" label='Entrar' className="bg-pink-500 p-button-raised"></Button>
                 </div>
-                <div className="carrinho">
-                    <img src={carrinho} />
+                <div> 
+                    <Button size="small" className='flex-1' text raised>
+                        <img className='relative bg' src={carrinho} />
+                    <svg className='absolute top-0 right-0 bg' xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ec0aa1"><path d="M480.28-96Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312ZM360-288h240v-72H432v-84h96q29.7 0 50.85-21.15Q600-486.3 600-516v-84q0-29.7-21.15-50.85Q557.7-672 528-672H360v72h168v84h-96q-29.7 0-50.85 21.15Q360-473.7 360-444v156Z"/></svg>
+                    </Button>
                 </div>
             </div>
             <ul className="nav-menu">
