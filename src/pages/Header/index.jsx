@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../../assets/logo-header.svg';
 import carrinho from '../../assets/mini-cart.svg';
-import { Button } from 'primereact/button';
+import { Button  } from 'primereact/button';
+import { InputText } from 'primereact/inputtext';
+        
 
 const StyleHeader = styled.header`
     background-color: #ffffff;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px;
 
@@ -54,8 +56,8 @@ const StyleHeader = styled.header`
     .search-bar input {
         width: 80%;
         padding: 10px 40px 10px 10px; /* Adiciona espaço para o ícone */
-        border: 1px solid #474747; /* Cor da borda */
-        border-radius: 5px;
+       // border: 1px solid #474747; /* Cor da borda */
+       // border-radius: 5px;
         background-color: #fcfcfc; /* Cor de fundo da barra de pesquisa */
     }
     .signup-button {
@@ -75,28 +77,32 @@ const StyleHeader = styled.header`
     }
 
     .nav-menu {
-        list-style: none;
         display: flex;
-        justify-content: center;
+        //align-content: start;
+        justify-content: start;
         width: 100%;
         margin-top: 10px;
     }
+    div ul {
+        display: flex;
+        list-style: none;
+    }
 
-    .nav-menu li {
+    div ul li {
         margin-right: 20px;
     }
 
-    .nav-menu li a {
+    div ul li a {
         color: #474747;
         text-decoration: none;
     }
 
-    .nav-menu li a.active {
+    div ul li a.active {
         color: #fa58a9; /* Cor do link ativo */
         text-decoration: underline; /* Adiciona sublinhado */
     }
 
-    .nav-menu li a:hover {
+    div ul  li a:hover {
         color: black;
     }
     `;
@@ -115,59 +121,61 @@ const Header = () => {
                     <img src={logo} alt="Digital Store" />
                 </div>
                 <div className="search-bar">
-                    <input type="text" placeholder="Pesquisar produtos..." />
+                    <InputText  type="text" className="p-inputtext-sm" placeholder="Pesquisar produtos..." />
                 </div>
-                <div className=" botao-cadastro">
-                    <Button size="small" className="btn signup-button" text raised>Cadastre-se</Button>
+                <div className="botao-cadastro">
+                    <Button size="small" className="signup-button" label="Cadastre-se" link onClick={() =>  window.open('#')}/>
                 </div>
-                <div className="p-button-raised ">
-                    <Button size="small" label='Entrar' className="bg-pink-500 p-button-raised"></Button>
+                <div className="">
+                    <Button size="small" label='Entrar' raised className="bg-pink-400 "></Button>
                 </div>
-                <div> 
-                    <Button size="small" className='flex-1' text raised>
+                <div>
+                    <Button size="small" className='flex-1' text >
                         <img className='relative bg' src={carrinho} />
-                    <svg className='absolute top-0 right-0 bg' xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#ec0aa1"><path d="M480.28-96Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312ZM360-288h240v-72H432v-84h96q29.7 0 50.85-21.15Q600-486.3 600-516v-84q0-29.7-21.15-50.85Q557.7-672 528-672H360v72h168v84h-96q-29.7 0-50.85 21.15Q360-473.7 360-444v156Z"/></svg>
+                        <svg className='absolute top-0 right-0 bg' xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="20px" fill="#ec0a15"><path d="M480.28-96Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312ZM360-288h240v-72H432v-84h96q29.7 0 50.85-21.15Q600-486.3 600-516v-84q0-29.7-21.15-50.85Q557.7-672 528-672H360v72h168v84h-96q-29.7 0-50.85 21.15Q360-473.7 360-444v156Z" /></svg>
                     </Button>
                 </div>
             </div>
-            <ul className="nav-menu">
-                <li>
-                    <Link
-                        to="/Home"
-                        className={activeLink === 'Home' ? 'active' : ''}
-                        onClick={() => handleLinkClick('Home')}
-                    >
-                        <span>Home</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to="/Produtos"
-                        className={activeLink === 'Produtos' ? 'active' : ''}
-                        onClick={() => handleLinkClick('Produtos')}
-                    >
-                        <span>Produtos</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to="/Categorias"
-                        className={activeLink === 'Categorias' ? 'active' : ''}
-                        onClick={() => handleLinkClick('Categorias')}
-                    >
-                        <span>Categorias</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link
-                        to="/Pedidos"
-                        className={activeLink === 'Pedidos' ? 'active' : ''}
-                        onClick={() => handleLinkClick('Pedidos')}
-                    >
-                        <span>Meus Pedidos</span>
-                    </Link>
-                </li>
-            </ul>
+            <div className='nav-menu'>
+                <ul >
+                    <li>
+                        <Link
+                            to="/Home"
+                            className={activeLink === 'Home' ? 'active' : ''}
+                            onClick={() => handleLinkClick('Home')}
+                        >
+                            <span>Home</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/Produtos"
+                            className={activeLink === 'Produtos' ? 'active' : ''}
+                            onClick={() => handleLinkClick('Produtos')}
+                        >
+                            <span>Produtos</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/Categorias"
+                            className={activeLink === 'Categorias' ? 'active' : ''}
+                            onClick={() => handleLinkClick('Categorias')}
+                        >
+                            <span>Categorias</span>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="/Pedidos"
+                            className={activeLink === 'Pedidos' ? 'active' : ''}
+                            onClick={() => handleLinkClick('Pedidos')}
+                        >
+                            <span>Meus Pedidos</span>
+                        </Link>
+                    </li>
+                </ul>
+            </div>
         </StyleHeader>
     );
 }
