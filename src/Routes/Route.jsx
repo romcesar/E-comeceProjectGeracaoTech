@@ -1,13 +1,14 @@
-import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-
 import Home from "../pages/Home";
-import Products from '../pages/Products';
+import Products from '../pages/Products/index';
 import PageNotFound from '../pages/DefaultPageNotFound';
 import LayoutPage from '../pages/LayoutPage';
-import About from '../pages/About';
-import Contact from '../pages/Contact';
+import About from '../pages/Pedidos';
+import Categoria from '../pages/Categoria';
+import Pedidos from '../pages/Pedidos';
+
+
 
 
 const Routers = () => {
@@ -17,8 +18,9 @@ const Routers = () => {
                 <Route path='/' element={<LayoutPage />}>
                     <Route index path='/Home' element={<Home />} />
                     <Route path='/About' element={<About />} />
-                    <Route path='/Contact' element={<Contact />} />
+                    <Route path='/Categoria' element={<Categoria />} />
                     <Route path='/Products' element={<Products />} />
+                    <Route path='/Pedidos' element={<Pedidos />} />
                     <Route path='*' element={<PageNotFound />} />
                 </Route>
             </Routes>

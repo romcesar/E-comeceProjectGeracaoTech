@@ -1,7 +1,10 @@
-import { Button } from 'primereact/button';
 import { Carousel } from 'primereact/carousel';
+import { Button } from 'primereact/button';
 import { Image } from 'primereact/image';
 import styled from 'styled-components';
+import ProductCard from '../../components/Produtos/ProductsCard';
+import { ProductService } from '../../service/mokProduct/ProductService';
+
 
 const StyleHome = styled.main`
 padding: 0;
@@ -12,12 +15,23 @@ background-color:"#F5F5F5";
  width: 100%;
  padding: 40px;
 }
+.contentProduct{
+    display: flex;
+    background-color: #e61515;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .contentSection2{
     background-image: url("/Rectangle-3761.png");
     width:300px;
-    height:410px;
+    height:420px;
     margin: 15px;
 }`;
+
+
 
 const imagensSection1 = [
     {
@@ -103,6 +117,7 @@ const Home = () => {
             numScroll: 1
         }
     ];
+    
 
 
 
@@ -140,14 +155,14 @@ const Home = () => {
                         <h2 className='col-6  text-dark-500 font-bold'>Coleções em destaque</h2>
                         <div className=' grid'>
                             <div className='col-4 contentSection2'>
-                                <Button className='col-4 mt-2' text size='small' style={{ color: 'black', backgroundColor: "#E7FF86", width: "80px", height: "30px" }} label='30% OFF' />
+                                <Button className='col-4 ' text size='small' style={{ color: 'black', backgroundColor: "#E7FF86", width: "80px", height: "30px" }} label='30% OFF' />
                                 <Image className='col pl-8' src="/collection-1.png"
                                     alt={product.altText} height='130'
                                     width="210" />
                                 <Button size='small' className='col-6' style={{ backgroundColor: "#ffffff", color: "#C92071", width: "80px", height: "30px" }} text label='Comprar'></Button>
                             </div>
                             <div className='col-4 contentSection2'>
-                                <Button className='col-4 mt-2' text size='small' style={{ color: 'black', backgroundColor: "#E7FF86", width: "80px", height: "30px" }} label='30% OFF' />
+                                <Button className='col-4 ' text size='small' style={{ color: 'black', backgroundColor: "#E7FF86", width: "80px", height: "30px" }} label='30% OFF' />
 
                                 <Image className='col pl-8' src="/collection-2.png"
                                     alt={product.altText} height='130'
@@ -155,7 +170,7 @@ const Home = () => {
                                 <Button size='small' className='col-6' style={{ backgroundColor: "#ffffff", color: "#C92071", width: "80px", height: "30px" }} text label='Comprar'></Button>
                             </div>
                             <div className='col-4 contentSection2'>
-                                <Button className='col-4 mt-2' text size='small' style={{ color: 'black', backgroundColor: "#E7FF86", width: "80px", height: "30px" }} label='30% OFF' />
+                                <Button className='col-4 ' text size='small' style={{ color: 'black', backgroundColor: "#E7FF86", width: "80px", height: "30px" }} label='30% OFF' />
                                 <Image className='col pl-8' src="/collection-3.png"
                                     alt={product.altText} height='130'
                                     width="210" />
@@ -183,23 +198,34 @@ const Home = () => {
                 <div className='flex-1'>
                     <h2>Coleções em destaque</h2>
                 </div>
-                <div className='flex-1 mb-4'>
-                    <a href="#">
-                        <Image src='/sesction3-1.png' ></Image>
+                <div className='flex-1 '>
+                    <a className='' href="#">
+                        <Image className='' src='/sesction3-1.png' height='100'
+                                    width="120" ></Image>
+                    </a>
+                    <a className='' href="#">
+                        <Image src='/sesction3-2.png' height='100'
+                                    width="100"></Image>
                     </a>
                     <a href="#">
-                        <Image src='/sesction3-2.png'></Image>
+                        <Image src='/sesction3-3.png' height='100'
+                                    width="100"></Image>
                     </a>
                     <a href="#">
-                        <Image src='/sesction3-3.png'></Image>
+                        <Image src='/sesction3-4.png' height='100'
+                                    width="100"></Image>
                     </a>
                     <a href="#">
-                        <Image src='/sesction3-4.png'></Image>
-                    </a>
-                    <a href="#">
-                        <Image src='/sesction3-5.png'></Image>
+                        <Image src='/sesction3-5.png' height='100'
+                                    width="100"></Image>
                     </a>
                 </div>
+            </div>
+            <div >
+                <ProductCard  props={ProductService}></ProductCard>
+                
+                {/* <ProductCard image ={Produtos.image} name={Produtos.name} title={"imagem1"} priceDiscount={Produtos.priceDiscount} price={Produtos.price}></ProductCard> */}
+
             </div>
         </StyleHome>
     );

@@ -1,8 +1,7 @@
-import React from 'react';
 
 const Contact = () => {
     return (<>
-        <h1>Contatos</h1>
+        <h1>Categoria</h1>
     </>);
 }
 

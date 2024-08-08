@@ -149,7 +149,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link
-                            to="/Produtos"
+                            to="/Products"
                             className={activeLink === 'Produtos' ? 'active' : ''}
                             onClick={() => handleLinkClick('Produtos')}
                         >
@@ -158,7 +158,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link
-                            to="/Categorias"
+                            to="/Categoria"
                             className={activeLink === 'Categorias' ? 'active' : ''}
                             onClick={() => handleLinkClick('Categorias')}
                         >
