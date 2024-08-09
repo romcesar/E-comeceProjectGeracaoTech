@@ -152,28 +152,28 @@ const Home = () => {
             <StyleHome>
                 <div className="flex-inline">
                     <div className='grid justify-content-center'>
-                        <h2 className='col-6  text-dark-500 font-bold'>Coleções em destaque</h2>
-                        <div className=' grid'>
+                        <h2 className='col-6 text-dark-500 font-bold'>Coleções em destaque</h2>
+                        <div className='text-left  grid'>
                             <div className='col-4 contentSection2'>
                                 <Button className='col-4 ' text size='small' style={{ color: 'black', backgroundColor: "#E7FF86", width: "80px", height: "30px" }} label='30% OFF' />
-                                <Image className='col pl-8' src="/collection-1.png"
+                                <Image className='col' src="/collection-1.png"
                                     alt={product.altText} height='130'
-                                    width="210" />
+                                    width="280" />
                                 <Button size='small' className='col-6' style={{ backgroundColor: "#ffffff", color: "#C92071", width: "80px", height: "30px" }} text label='Comprar'></Button>
                             </div>
                             <div className='col-4 contentSection2'>
                                 <Button className='col-4 ' text size='small' style={{ color: 'black', backgroundColor: "#E7FF86", width: "80px", height: "30px" }} label='30% OFF' />
 
-                                <Image className='col pl-8' src="/collection-2.png"
+                                <Image className='col' src="/collection-2.png"
                                     alt={product.altText} height='130'
-                                    width="210" />
+                                    width="280" />
                                 <Button size='small' className='col-6' style={{ backgroundColor: "#ffffff", color: "#C92071", width: "80px", height: "30px" }} text label='Comprar'></Button>
                             </div>
                             <div className='col-4 contentSection2'>
                                 <Button className='col-4 ' text size='small' style={{ color: 'black', backgroundColor: "#E7FF86", width: "80px", height: "30px" }} label='30% OFF' />
-                                <Image className='col pl-8' src="/collection-3.png"
+                                <Image className='col' src="/collection-3.png"
                                     alt={product.altText} height='130'
-                                    width="210" />
+                                    width="280" />
                                 <Button size='small' className='col-6' style={{ backgroundColor: "#ffffff", color: "#C92071", width: "80px", height: "30px" }} text label='Comprar'></Button>
                             </div>
 
@@ -195,7 +195,7 @@ const Home = () => {
                     itemTemplate={productSection2} />
             </div>
             <div className='block'>
-                <div className='flex-1'>
+                <div className=' flex-1'>
                     <h2>Coleções em destaque</h2>
                 </div>
                 <div className='flex-1 '>
