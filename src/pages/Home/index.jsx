@@ -32,7 +32,6 @@ background-color:"#F5F5F5";
 }`;
 
 
-
 const imagensSection1 = [
     {
         src: "/home-slide-0.png",
@@ -117,9 +116,6 @@ const Home = () => {
             numScroll: 1
         }
     ];
-    
-
-
 
     const productSection1 = (product) => {
         console.log(product);
@@ -201,30 +197,28 @@ const Home = () => {
                 <div className='flex-1 '>
                     <a className='' href="#">
                         <Image className='' src='/sesction3-1.png' height='100'
-                                    width="120" ></Image>
+                            width="120" ></Image>
                     </a>
                     <a className='' href="#">
                         <Image src='/sesction3-2.png' height='100'
-                                    width="100"></Image>
+                            width="100"></Image>
                     </a>
                     <a href="#">
                         <Image src='/sesction3-3.png' height='100'
-                                    width="100"></Image>
+                            width="100"></Image>
                     </a>
                     <a href="#">
                         <Image src='/sesction3-4.png' height='100'
-                                    width="100"></Image>
+                            width="100"></Image>
                     </a>
                     <a href="#">
                         <Image src='/sesction3-5.png' height='100'
-                                    width="100"></Image>
+                            width="100"></Image>
                     </a>
                 </div>
             </div>
             <div >
-                <ProductCard  props={ProductService}></ProductCard>
-                
-                {/* <ProductCard image ={Produtos.image} name={Produtos.name} title={"imagem1"} priceDiscount={Produtos.priceDiscount} price={Produtos.price}></ProductCard> */}
+                <ProductCard props={ProductService}></ProductCard>
 
             </div>
         </StyleHome>
