@@ -118,7 +118,9 @@ const Header = () => {
         <StyleHeader>
             <div className="top-bar">
                 <div className="logo">
+                <Link to="/Home">
                     <img src={logo} alt="Digital Store" />
+                    </Link>
                 </div>
                 <div className="search-bar">
                     <InputText  type="text" className="p-inputtext-sm" placeholder="Pesquisar produtos..." />
