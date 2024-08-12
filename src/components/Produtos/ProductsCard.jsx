@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const StyleProduct = styled.main`
 
-margin:10px;
+/* margin:10px;
 padding:10px;
 
 .contentProduct{
@@ -14,7 +14,7 @@ padding:10px;
    
     justify-content:space-around;
     align-items: center; */
-}
+} */
 `;
 
 const ProductCard = ({ props }) => {
