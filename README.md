@@ -28,7 +28,7 @@ Este é um projeto de e-commerce desenvolvido com React e Styled Components. O o
 
 [![project][PROJECT__BADGE]][PROJECT__URL]
 
-<h2>Prerequisites</h2>
+<h2>Pré-requisitos</h2>
 
 Node
 Git
@@ -56,80 +56,82 @@ Inicie o servidor de desenvolvimento:
 
 <h3 id="routes">📍 Estrutura do projeto</h3>
 
-├── src/
-│   ├── components/
-│   │   ├── Carrocel
-│   │   ├── Image
-│   │   ├── Produtos
-│   └── pages/
-│       ├── Categoria
-│       ├── DefaultPageNotFound
-│       ├── Footer
-│       ├── Header
-│       ├── Home
-│       ├── LayoutPage
-│       ├── Pedidos
-│       ├── Products
-│       ├── ProductViewPage
-│   ├── Routes/
-│       ├── Route.jsx
-│   ├── services/
-│       ├── ProductService.jsx
-├── App.css
-├── App.jsx
-├── index.css
-├── main.jsx
-├── .eslintrc.cjs
-├── .gitignore
-├── index.html
-├── package-lock.json
-├── package.json
-├── README.md
-├── vite.config.js
-├── yarn.lock
+ <div class="directory-structure">
+    ├── src/<br>
+    │   ├── components/<br>
+    │   │   ├── Carrocel<br>
+    │   │   ├── Image<br>
+    │   │   ├── Produtos<br>
+    │   └── pages/<br>
+    │       ├── Categoria<br>
+    │       ├── DefaultPageNotFound<br>
+    │       ├── Footer<br>
+    │       ├── Header<br>
+    │       ├── Home<br>
+    │       ├── LayoutPage<br>
+    │       ├── Pedidos<br>
+    │       ├── Products<br>
+    │       ├── ProductViewPage<br>
+    │   ├── Routes/<br>
+    │       ├── Route.jsx<br>
+    │   ├── services/<br>
+    │       ├── ProductService.jsx<br>
+    ├── App.css<br>
+    ├── App.jsx<br>
+    ├── index.css<br>
+    ├── main.jsx<br>
+    ├── .eslintrc.cjs<br>
+    ├── .gitignore<br>
+    ├── index.html<br>
+    ├── package-lock.json<br>
+    ├── package.json<br>
+    ├── README.md<br>
+    ├── vite.config.js<br>
+    ├── yarn.lock<br>
+  </div>
 
 ## Componentes:
 
-Carrocel
+Carrocel<br>
 Componente responsável por exibir um carrossel de imagens.
 
-Image
+Image<br>
 Componente que exibe imagens dos produtos.
 
-Produtos
+Produtos<br>
 Componente que lista todos os produtos disponíveis.
 
 Páginas
-Categoria
+Categoria<br>
 Página que exibe produtos filtrados por categoria.
 
-DefaultPageNotFound
+DefaultPageNotFound<br>
 Página exibida quando uma rota não é encontrada.
 
-Footer
+Footer<br>
 Componente responsável pelo rodapé do site.
 
-Header
+Header<br>
 Componente responsável pelo cabeçalho do site.
 
-Home
+Home<br>
 Página inicial do site.
 
-LayoutPage
+LayoutPage<br>
 Página que define o layout geral do site.
 
-Pedidos
+Pedidos<br>
 Página que exibe os pedidos do usuário.
 
-Products
+Products<br>
 Página que lista todos os produtos disponíveis.
 
-ProductViewPage
+ProductViewPage<br>
 Página de visualização de um produto específico.
 
 ## Serviços:
 
-ProductService
+ProductService<br>
 Serviço responsável por gerenciar as requisições relacionadas aos produtos.
 
 <h2 id="colab">🤝 Colaboradores</h2>
