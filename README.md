@@ -141,7 +141,7 @@ Um agradecimento especial as seguintes pessoas:
 <table>
   <tr>
     <td align="center">
-      <a href="#">
+      <a href="https://www.linkedin.com/in/romcesar/">
         <img src="public/img1.jpg" width="100px;" alt="Rômulo Cesar imagem"/><br>
         <sub>
           <b>Rômulo Cesar</b>
@@ -149,7 +149,7 @@ Um agradecimento especial as seguintes pessoas:
       </a>
     </td>
     <td align="center">
-      <a href="#">
+      <a href="https://www.linkedin.com/in/guilherme-uch%C3%B4a-7186661a2/">
         <img src="public/img2.jpg" width="100px;" alt="Guilherme Uchôa imagem"/><br>
         <sub>
           <b>Guilherme Uchôa</b>
