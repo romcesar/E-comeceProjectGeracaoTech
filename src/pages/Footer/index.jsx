@@ -15,17 +15,6 @@ ul{
     padding-left: 10px;
 }
 
-/* .div1{
-    width: 100%;
-    height: 200px;
-    align-content: center;
-}
-.div1 h2{
-    color: #c7cacc;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-} */
 `;
 
 const Footer = () => {
@@ -42,13 +31,19 @@ const Footer = () => {
                     </div>
                     <div className='grid col text-center p-3   font-bold'>
                         <div className='col-2'>
-                            <img src={rede1} alt="facebook" />
+                            <a href="#">
+                                <img src={rede1} alt="facebook" />
+                            </a>
                         </div>
                         <div className='col-2'>
-                            <img src={rede2} alt="instagram" />
+                            <a href="#">
+                                <img src={rede2} alt="instagram" />
+                            </a>
                         </div>
                         <div className='col-2'>
-                            <img src={rede3} alt="twitter" />
+                            <a href="#">
+                                <img src={rede3} alt="twitter" />
+                            </a>
                         </div>
                     </div>
                 </div>

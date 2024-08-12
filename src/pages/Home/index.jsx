@@ -5,11 +5,11 @@ import styled from 'styled-components';
 import ProductCard from '../../components/Produtos/ProductsCard';
 import { ProductService } from '../../service/mokProduct/ProductService';
 import 'primeicons/primeicons.css';
-        
 
 const StyleHome = styled.main`
 padding: 0;
 margin: 0;
+
 
 .section1{
 background-color:"#F5F5F5";
@@ -127,9 +127,6 @@ const Home = () => {
         }
     ];
 
-
-
-
     const productSection1 = (product) => {
         console.log(product);
         return (
@@ -149,7 +146,7 @@ const Home = () => {
                             <Button label='Ver Ofertas' size='small' className="bg-pink-500 p-button-raised" />
                         </div>
                     </div>
-                    <div className="  w-5 mt-2 w-5 pr-8 mr-8 s">
+                    <div className=" w-5 mt-2 w-5 pr-8 mr-8 s">
                         <Image style={{ backgroundColor: "#F5F5F5" }} className="w-100" src={product.src} alt={product.altText} height='400' width="600"> </Image>
                     </div>
                 </div>
@@ -159,7 +156,7 @@ const Home = () => {
     const productSection2 = (product) => {
         return (
             <StyleHome>
-                <div className=" flex-inline">
+                <div className="flex-inline">
                     <div className='grid justify-content-center'>
                         <h2 className='col-6 text-dark-500 font-bold'>Coleções em destaque</h2>
                         <div className='text-left  grid'>
@@ -211,36 +208,36 @@ const Home = () => {
                     <a className='' href="#">
                         <Image className='' src='/sesction3-1.png' height='100'
                             width="120" ></Image>
-                            width="120" ></Image>
                     </a>
                     <a className='' href="#">
                         <Image src='/sesction3-2.png' height='100'
-                            width="100"></Image>
                             width="100"></Image>
                     </a>
                     <a href="#">
                         <Image src='/sesction3-3.png' height='100'
                             width="100"></Image>
-                            width="100"></Image>
                     </a>
                     <a href="#">
                         <Image src='/sesction3-4.png' height='100'
                             width="100"></Image>
-                            width="100"></Image>
                     </a>
                     <a href="#">
                         <Image src='/sesction3-5.png' height='100'
-                            width="100"></Image>
                             width="100"></Image>
                     </a>
                 </div>
             </div>
             <div >
                 <div className='flex m-3 p-4  justify-content-around'>
-                    <span className="font-bold pr-8 text-base">Produtos em alta </span>
-                    <a className='text-pink-500 pl-8 align-items-stretch text-center' href="#">Ver todos <span className="align-items-stretch material-symbols-outlined"> arrow_forward</span>  </a>
+                    <h2 className="font-bold pr-8 text-1xl">Produtos em alta </h2>
+                    <div className='flex'>
+                        <a className='text-pink-500 pr-4 align-items-stretch text-center' href="#">Ver todos </a>
+                        <span className="text-pink-500  align-items-stretch text-center material-symbols-outlined"> arrow_forward</span>
+                    </div>
                 </div>
-                <ProductCard props={ProductService}></ProductCard>
+                <a href="/Products/1">
+                    <ProductCard props={ProductService}></ProductCard>
+                </a>
             </div>
             <div className='flex'>
                 <div className=" grid mt-4 line-height-1 flex-wrap ">
@@ -249,15 +246,15 @@ const Home = () => {
                     </div>
                     <div className='col'>
                         <div className='text-pink-500 text-left text-center font-bold'>
-                        Oferta especial
+                            Oferta especial
                         </div>
                         <div className='text-4xl w-10 text-left text-center font-bold'>
-                            <h2>Air Jordan edição de 
-                            colecionador</h2>
+                            <h2>Air Jordan edição de
+                                colecionador</h2>
                         </div>
                         <div className='text-1xl w-8 text-left line-height-4 font-light '>
-                            Consequat culpa exercitation mollit Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            voluptate ullam corporis blanditiis distinctio ea, quia delectus. nisi excepteur 
+                            Consequat culpa exercitation mollit Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            voluptate ullam corporis blanditiis distinctio ea, quia delectus. nisi excepteur
                             do do tempor laboris eiusmod irure consectetur.
                         </div>
                         <div className='text-2xl w-5 text-left p-4'>
@@ -266,10 +263,7 @@ const Home = () => {
                     </div>
 
                 </div>
-                <ProductCard props={ProductService}></ProductCard>
-
             </div>
-
         </StyleHome>
     );
 }
