@@ -142,7 +142,7 @@ Um agradecimento especial as seguintes pessoas:
   <tr>
     <td align="center">
       <a href="#">
-        <img src=""public/img1.jpg"" width="100px;" alt="Rômulo Cesar imagem"/><br>
+        <img src="public/img1.jpg" width="100px;" alt="Rômulo Cesar imagem"/><br>
         <sub>
           <b>Rômulo Cesar</b>
         </sub>
@@ -150,7 +150,7 @@ Um agradecimento especial as seguintes pessoas:
     </td>
     <td align="center">
       <a href="#">
-        <img src=""public/img2.jpg"" width="100px;" alt="Guilherme Uchôa imagem"/><br>
+        <img src="public/img2.jpg" width="100px;" alt="Guilherme Uchôa imagem"/><br>
         <sub>
           <b>Guilherme Uchôa</b>
         </sub>
